@@ -14,12 +14,17 @@
         <div class="form">
             <div class="form__item">
                 {{> field action='signupForm.change' type='email' name='email' label='Эл.Адрес' placeholder='Ваш Эл.Адрес'}}
-                <span class="form__error">Ошибка</span>
+                <span name='email' class="form__error">Ошибка</span>
             </div>
 
             <div class="form__item">
                 {{> field-password name='password' label='Пароль' placeholder='Пароль'}}
-                <span class="form__error">Ошибка</span>
+                <span name='password' class="form__error">Ошибка</span>
+            </div>
+
+            <div class="form__item">
+                {{> field-password name='passwordAgain' label='Пароль ещё раз' placeholder='Пароль'}}
+                <span name="passwordAgain" class="form__error">Ошибка</span>
             </div>
 
             <div class="form__item">
@@ -33,9 +38,9 @@
             </div>
         </div>
 
-        <button onclick="signupForm.submit()" class="button" type="button">Зарегистрироваться</button>
+        <button onclick="signupForm.submit()" class="button button--disabled" type="button">Зарегистрироваться</button>
 
-        <span class="alert alert--error">Внимание, ошибка!</span>
+        <span class="alert alert--disabled">Внимание, ошибка!</span>
     </form>
 </div>
 
