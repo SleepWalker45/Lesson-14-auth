@@ -36,7 +36,6 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.16",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.4",
     "prettier-plugin-hbs": "^1.0.1",
     "sass": "^1.32.8",
     "style-loader": "^3.3.1",
@@ -44,5 +43,8 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-middleware": "^6.1.1",
     "webpack-hot-middleware": "^2.25.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
   }
 }
