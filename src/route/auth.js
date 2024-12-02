@@ -10,9 +10,21 @@ const { Confirm } = require('../class/confirm')
 const { Session } = require("../class/session");
 
 User.create({
-  email: "test@mail.com",
-  password: 123,
+  email: "user@mail.com",
+  password: "asdASD123",
   role: 1,
+});
+
+User.create({
+  email: "admin@mail.com",
+  password: "asdASD123",
+  role: 2,
+});
+
+User.create({
+  email: "dev@mail.com",
+  password: "asdASD123",
+  role: 3,
 });
 
 // router.get Створює нам один ентпоїнт
